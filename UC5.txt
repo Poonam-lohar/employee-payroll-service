@@ -1,0 +1,11 @@
+create database payroll_service;
+use payroll_service;
+show databases;
+create table employee_payroll(id int not null auto_increment, name varchar(50) not null,salary Double not null,startDate Date not null, primary key(id) );
+desc employee_payroll;
+insert into employee_payroll(name,salary,startDate)values('Poonam',40000,'2022-10-13');
+insert into employee_payroll(name,salary,startDate)values('Shiv',30000,'2021-10-12');
+select*from employee_payroll;
+insert into employee_payroll(name,salary,startDate)values('Roshani',20000,'2021-06-12');
+select*from employee_payroll;
+select * from employee_payroll where salary > 30000;
